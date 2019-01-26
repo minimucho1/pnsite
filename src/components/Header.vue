@@ -19,8 +19,8 @@ export default {
 
 <style scoped>
 .header {
-  margin: auto;
-  width: 800px;
+  margin: inherit;
+  width: inherit;
   height: 61px;
 }
 
