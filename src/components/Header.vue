@@ -20,6 +20,7 @@ export default {
 <style scoped>
 .header {
   margin: inherit;
+  margin-bottom: 15px;
   width: inherit;
   height: 61px;
 }
@@ -48,14 +49,5 @@ export default {
 
 .header__links {
   font-size: 28px;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-a:hover {
-  color: blue;
 }
 </style>
