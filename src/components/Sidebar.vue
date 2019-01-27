@@ -3,7 +3,7 @@
     <div class="sidebar-card login-card">
       <button class="login button-link">Login / Register</button>
     </div>
-    <SidebarCard v-bind:title="serverStatusTitle" v-bind:value="serverStatusValue" />
+    <SidebarCard v-bind:title="serverStatusTitle" v-bind:values="serverStatusValue" />
     <div class="sidebar-card server-time-card">
       <span class="sidebard-card__title">Server Time</span>
       <div class="sidebar-card__value">
@@ -11,25 +11,8 @@
         <span class="server-time-card__time">23:59:59 (UTC-6)</span>
       </div>
     </div>
-    <div class="sidebar-card server-rates-card">
-      <span class="sidebard-card__title">Server Rates</span>
-      <div class="sidebar-card__value">
-        <div class="server-info-card__value">
-            <span class="server-info-card__key">EXP</span>
-            <span class="server-info-card__value">3x</span>
-            <span class="server-info-card__key">MESO</span>
-            <span class="server-info-card__value">3x</span>
-            <span class="server-info-card__key">DROP</span>
-            <span class="server-info-card__value">3x</span>
-        </div>
-      </div>
-    </div>
-    <div class="sidebar-card server-version-card">
-      <span class="sidebard-card__title">Server Version</span>
-      <div class="sidebar-card__value">
-        <span class="server-version-card__version-number">83</span>
-      </div>
-    </div>
+    <SidebarCard v-bind:title="serverRatesTitle" v-bind:values="serverRatesValue" />
+    <SidebarCard v-bind:title="serverVersionTitle" v-bind:values="serverVersionValue" />
   </div>
 </template>
 
@@ -42,9 +25,14 @@ export default {
   data() {
     return {
       serverStatusTitle: 'Server Status',
-      serverStatusValue: 'ONLINE'
+      serverStatusValue: 'ONLINE',
+      serverTimeTitle: 'Server Time',
+      serverRatesTitle: 'Server Rates',
+      serverRatesValue: '3x/3x/3x',
+      serverVersionTitle: 'Server Version',
+      serverVersionValue: '83',
     };
-  }
+  },
 };
 </script>
 
@@ -58,6 +46,7 @@ export default {
 
 .sidebar-card {
   margin: 10px;
+  padding: 5px;
   border-style: solid;
   display: flex;
   flex-direction: column;

@@ -2,7 +2,13 @@
   <div class="sidebar-card server-status-card">
     <span class="sidebard-card__title">{{ title }}</span>
     <div class="sidebar-card__value">
-      <span class="server-status-card__status">{{ value }}</span>
+      <span
+        v-for="(value, index) in values"
+        v-bind:key="index"
+        class="server-status-card__status"
+      >
+        {{ value }}
+      </span>
     </div>
   </div>
 </template>
@@ -10,19 +16,14 @@
 <script>
 export default {
   name: 'SidebarCard',
-  props: ['title', 'value'],
-  data() {
-    return {
-      title: 'default title',
-      value: 'default value',
-    };
-  }
-}
+  props: ['title', 'values'],
+};
 </script>
 
 <style scoped>
 .sidebar-card {
   margin: 10px;
+  padding: 5px;
   border-style: solid;
   display: flex;
   flex-direction: column;
