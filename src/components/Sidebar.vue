@@ -3,7 +3,6 @@
     <div class="sidebar-card login-card">
       <button class="login button-link">Login / Register</button>
     </div>
-    <SidebarCard v-bind:title="serverStatusTitle" v-bind:values="serverStatusValue" />
     <div class="sidebar-card server-time-card">
       <span class="sidebard-card__title">Server Time</span>
       <div class="sidebar-card__value">
@@ -11,6 +10,7 @@
         <span class="server-time-card__time">23:59:59 (UTC-6)</span>
       </div>
     </div>
+    <ServerStatusCard />
     <SidebarCard v-bind:title="serverRatesTitle" v-bind:values="serverRatesValue" />
     <SidebarCard v-bind:title="serverVersionTitle" v-bind:values="serverVersionValue" />
   </div>
@@ -18,14 +18,13 @@
 
 <script>
 import SidebarCard from '@/components/sidebar/SidebarCard';
+import ServerStatusCard from '@/components/sidebar/ServerStatusCard';
 
 export default {
   name: 'Sidebar',
-  components: { SidebarCard },
+  components: { SidebarCard, ServerStatusCard },
   data() {
     return {
-      serverStatusTitle: 'Server Status',
-      serverStatusValue: 'ONLINE',
       serverTimeTitle: 'Server Time',
       serverRatesTitle: 'Server Rates',
       serverRatesValue: '3x/3x/3x',

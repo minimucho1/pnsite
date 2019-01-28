@@ -20,7 +20,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .sidebar-card {
   margin: 10px;
   padding: 5px;
