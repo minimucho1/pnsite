@@ -2,10 +2,10 @@
   <div id="app">
     <Header />
     <div class="md-layout">
-      <div class="md-layout-item md-size-35 md-large-size-25 md-xlarge-size-15 md-small-hide">
+      <div class="md-layout-item md-size-35 md-large-size-30 md-xlarge-size-25 md-small-hide">
         <Sidebar />
       </div>
-      <div class="md-layout-item md-size-65 md-large-size-75 md-xlarge-size-85 md-small-size-100">
+      <div class="md-layout-item md-size-65 md-large-size-70 md-xlarge-size-75 md-small-size-100">
         <md-content>
           <router-view/>
         </md-content>
@@ -46,6 +46,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   width: 100%;
+  max-width: 1200px;
   min-height: 1200px;
   margin: auto;
 }
