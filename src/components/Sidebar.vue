@@ -1,10 +1,13 @@
 <template>
   <div class="sidebar">
-    <LoginCard />
     <ServerStatusCard />
     <ServerTimeCard />
-    <SidebarCard v-bind:title="serverRatesTitle" v-bind:value="serverRatesValue" />
-    <SidebarCard class="md-accent" v-bind:title="serverVersionTitle" v-bind:value="serverVersionValue" />
+    <SidebarCard
+      class="md-primary"
+      v-bind:title="serverRatesTitle"
+      v-bind:value="serverRatesValue"
+    />
+    <SidebarCard v-bind:title="serverVersionTitle" v-bind:value="serverVersionValue" />
   </div>
 </template>
 
@@ -30,9 +33,6 @@ export default {
 
 <style scoped>
 .sidebar {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* min-height: inherit; */
   padding: 10px;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <md-card class="md-primary" md-with-hover>
+  <md-card md-with-hover>
     <md-card-header>
       <div class="md-title">{{ title }}</div>
     </md-card-header>

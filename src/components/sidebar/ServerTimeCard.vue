@@ -1,5 +1,5 @@
 <template>
-  <md-card class="md-accent" md-with-hover>
+  <md-card md-with-hover>
     <md-card-header>
       <div class="md-title">Server Time</div>
     </md-card-header>
