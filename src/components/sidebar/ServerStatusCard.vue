@@ -1,5 +1,5 @@
 <template>
-  <md-card class="md-primary" md-theme="purple-card" md-with-hover>
+  <md-card class="md-primary" md-with-hover>
     <md-card-header>
       <div class="md-title">Server Status</div>
     </md-card-header>

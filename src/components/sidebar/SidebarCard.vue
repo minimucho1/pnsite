@@ -1,22 +1,16 @@
 <template>
-  <div class="sidebar-card server-status-card">
-    <span class="sidebard-card__title">{{ title }}</span>
-    <div class="sidebar-card__value">
-      <span
-        v-for="(value, index) in values"
-        v-bind:key="index"
-        class="server-status-card__status"
-      >
-        {{ value }}
-      </span>
-    </div>
-  </div>
+  <md-card class="md-primary" md-with-hover>
+    <md-card-header>
+      <div class="md-title">{{ title }}</div>
+    </md-card-header>
+    <md-card-content>{{ value }}</md-card-content>
+  </md-card>
 </template>
 
 <script>
 export default {
   name: 'SidebarCard',
-  props: ['title', 'values'],
+  props: ['title', 'value'],
 };
 </script>
 

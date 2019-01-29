@@ -1,11 +1,13 @@
 <template>
-  <div class="server-time-card sidebar-card">
-    <span class="sidebar-card__title">{{ title }}</span>
-    <div class="server-time-card__values sidebar-card__value">
-      <span class="server-time-card__currrentdate">{{ date }}</span>
-      <span class="server-time-card__currenttime">{{ time }}</span>
-    </div>
-  </div>
+  <md-card class="md-accent" md-with-hover>
+    <md-card-header>
+      <div class="md-title">Server Time</div>
+    </md-card-header>
+    <md-card-content>
+      <span>{{ date }}</span>
+      <span>{{ time }}</span>
+    </md-card-content>
+  </md-card>
 </template>
 
 <script>

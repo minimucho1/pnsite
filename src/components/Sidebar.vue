@@ -1,12 +1,10 @@
 <template>
   <div class="sidebar">
-    <div class="sidebar-card login-card">
-      <button class="login button-link">Login / Register</button>
-    </div>
+    <LoginCard />
     <ServerStatusCard />
     <ServerTimeCard />
-    <SidebarCard v-bind:title="serverRatesTitle" v-bind:values="serverRatesValue" />
-    <SidebarCard v-bind:title="serverVersionTitle" v-bind:values="serverVersionValue" />
+    <SidebarCard v-bind:title="serverRatesTitle" v-bind:value="serverRatesValue" />
+    <SidebarCard class="md-accent" v-bind:title="serverVersionTitle" v-bind:value="serverVersionValue" />
   </div>
 </template>
 
@@ -14,10 +12,11 @@
 import SidebarCard from '@/components/sidebar/SidebarCard';
 import ServerStatusCard from '@/components/sidebar/ServerStatusCard';
 import ServerTimeCard from '@/components/sidebar/ServerTimeCard';
+import LoginCard from '@/components/sidebar/LoginCard';
 
 export default {
   name: 'Sidebar',
-  components: { SidebarCard, ServerStatusCard, ServerTimeCard },
+  components: { SidebarCard, ServerStatusCard, ServerTimeCard, LoginCard },
   data() {
     return {
       serverRatesTitle: 'Server Rates',
@@ -31,44 +30,9 @@ export default {
 
 <style scoped>
 .sidebar {
-  display: flex;
-  flex-direction: column;
-  min-height: inherit;
-  padding: 5px;
-}
-
-.sidebar-card {
-  margin: 10px;
-  padding: 5px;
-  border-style: solid;
-  display: flex;
-  flex-direction: column;
-}
-
-.sidebar-card__title {
-  font-size: 15px;
-}
-
-.sidebar-card__value {
-  font-size: 28px;
-}
-
-.button-link {
-  size: 18px;
-  font-size: 28px;
-  border-style: solid;
-  padding: 5px;
-}
-
-.card {
-  border-style: solid;
-}
-
-.server-info-card__content {
-  display: inline-block;
-}
-
-.server-info-card__value {
-  font-size: 20px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* min-height: inherit; */
+  padding: 10px;
 }
 </style>
