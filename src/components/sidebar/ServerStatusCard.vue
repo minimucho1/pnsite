@@ -1,10 +1,10 @@
 <template>
-  <div class="server-status-card sidebar-card">
-    <span class="sidebar-card__title">{{ title }}</span>
-    <div class="sidebar-card__value">
-      <span class="server-status-card__status">{{ getServerStatus() }}</span>
-    </div>
-  </div>
+  <md-card class="md-primary" md-theme="purple-card" md-with-hover>
+    <md-card-header>
+      <div class="md-title">Server Status</div>
+    </md-card-header>
+    <md-card-content>{{ getServerStatus() }}</md-card-content>
+  </md-card>
 </template>
 
 <script>
