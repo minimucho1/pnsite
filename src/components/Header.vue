@@ -1,15 +1,16 @@
 <template>
-  <div class="header">
-    <a class="header__logo left" href="#">Project Nano</a>
-    <div class="header__links right">
-      <a class="header__link" href="#">About</a>
-      <a class="header__link" href="#">Download</a>
-      <a class="header__link" href="#">Rules</a>
-      <a class="header__link" href="#">Forums</a>
+  <div class="header md-layout md-gutter">
+    <div class="header__logo md-display-2 md-layout-item md-alignment-bottom md-size-35 md-xsmall-size-100 md-small-size-100">
+      <a href="#">Project Nano</a>
+    </div>
+    <div class="header__links md-layout-item md-size-65 md-layout md-gutter md-alignment-center md-xsmall-size-100 md-small-size-100">
+      <a class="header__link md-display-1 md-layout-item md-xsmall-size-100 md-small-size-50 md-medium-size-25" href="#">About</a>
+      <a class="header__link md-display-1 md-layout-item md-xsmall-size-100 md-small-size-50 md-medium-size-25" href="#">Download</a>
+      <a class="header__link md-display-1 md-layout-item md-xsmall-size-100 md-small-size-50 md-medium-size-25" href="#">Rules</a>
+      <a class="header__link md-display-1 md-layout-item md-xsmall-size-100 md-small-size-50 md-medium-size-25" href="#">Forums</a>
     </div>
   </div>
 </template>
-
 
 <script>
 export default {
@@ -18,36 +19,4 @@ export default {
 </script>
 
 <style scoped>
-.header {
-  margin: inherit;
-  margin-bottom: 15px;
-  width: inherit;
-  height: 61px;
-}
-
-.left {
-  position: relative;
-  float: left;
-  left: 10px;
-}
-
-.right {
-  position: relative;
-  float: right;
-  line-height: 61px;
-  right: 10px;
-}
-
-.header__logo {
-  font-size: 40px;
-  border-style: solid;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.header__links {
-  font-size: 28px;
-}
 </style>

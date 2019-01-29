@@ -1,13 +1,14 @@
 <template>
   <div id="app">
-    <Header/>
-    <hr />
-    <div class="body">
-      <div class="body-left">
+    <Header />
+    <div class="md-layout">
+      <div class="md-layout-item md-size-35 md-large-size-25 md-xlarge-size-15 md-small-hide">
         <Sidebar />
       </div>
-      <div class="body-right">
-        <router-view/>
+      <div class="md-layout-item md-size-65 md-large-size-75 md-xlarge-size-85 md-small-size-100">
+        <md-content>
+          <router-view/>
+        </md-content>
       </div>
     </div>
   </div>
@@ -34,33 +35,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  width: 1000px;
-  min-height: 768px;
+  width: 100%;
+  min-height: 1200px;
   margin: auto;
-}
-
-hr {
-  border-style: solid
-}
-
-.body {
-  margin-bottom: 15px;
-  min-height: inherit;
-}
-
-.body-left {
-  position: relative;
-  float: left;
-  left: 10px;
-  width: 30%;
-  min-height: inherit;
-}
-
-.body-right {
-  position: relative;
-  float: right;
-  right: 10px;
-  width: 70%;
 }
 
 a {
