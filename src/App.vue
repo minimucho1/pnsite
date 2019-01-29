@@ -6,9 +6,7 @@
         <Sidebar />
       </div>
       <div class="md-layout-item md-size-65 md-large-size-70 md-xlarge-size-75 md-small-size-100">
-        <md-content>
-          <router-view/>
-        </md-content>
+        <router-view/>
       </div>
     </div>
   </div>

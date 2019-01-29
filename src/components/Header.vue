@@ -1,8 +1,8 @@
 <template>
   <div class="header">
     <md-toolbar>
-      <div class="md-toolbar-row">
-        <h3 class="md-title">Project Nano</h3>
+      <div class="md-toolbar-row md-toolbar-offset">
+        <span class="md-display-1">Project Nano</span>
         <div class="md-toolbar-section-end">
           <md-button class="button-icon-text">
             <md-icon md-src="/static/sign-in-alt-solid.svg"></md-icon>
