@@ -14,13 +14,11 @@
           </md-button>
         </div>
       </div>
-      <div class="md-toolbar-row md-toolbar-offset">
-        <div class="header__links">
-          <md-button class="button-icon-text"><md-icon md-src="/static/dice-d6-solid.svg" /><div>About</div></md-button>
-          <md-button class="button-icon-text"><md-icon md-src="/static/download-solid.svg" /><div>Download</div></md-button>
-          <md-button class="button-icon-text"><md-icon md-src="/static/gavel-solid.svg" /><div>Rules</div></md-button>
-          <md-button class="button-icon-text"><md-icon md-src="/static/comments-solid.svg" /><div>Forums</div></md-button>
-        </div>
+      <div class="md-toolbar-row header__links">
+        <md-button class="button-icon-text"><md-icon md-src="/static/dice-d6-solid.svg" /><div>About</div></md-button>
+        <md-button class="button-icon-text"><md-icon md-src="/static/download-solid.svg" /><div>Download</div></md-button>
+        <md-button class="button-icon-text"><md-icon md-src="/static/gavel-solid.svg" /><div>Rules</div></md-button>
+        <md-button class="button-icon-text"><md-icon md-src="/static/comments-solid.svg" /><div>Forums</div></md-button>
       </div>
     </md-toolbar>
   </div>
@@ -35,5 +33,9 @@ export default {
 <style scoped>
 .button-icon-text {
   height: 45px;
+}
+
+.header__links {
+  justify-content: center;
 }
 </style>
