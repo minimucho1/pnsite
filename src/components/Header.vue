@@ -1,14 +1,28 @@
 <template>
-  <div class="header md-layout md-gutter">
-    <div class="header__logo md-display-2 md-layout-item md-alignment-bottom md-size-35 md-xsmall-size-100 md-small-size-100">
-      <a href="#">Project Nano</a>
-    </div>
-    <div class="header__links md-layout-item md-size-65 md-layout md-gutter md-alignment-center md-xsmall-size-100 md-small-size-100">
-      <a class="header__link md-display-1 md-layout-item md-xsmall-size-100 md-small-size-50 md-medium-size-25" href="#">About</a>
-      <a class="header__link md-display-1 md-layout-item md-xsmall-size-100 md-small-size-50 md-medium-size-25" href="#">Download</a>
-      <a class="header__link md-display-1 md-layout-item md-xsmall-size-100 md-small-size-50 md-medium-size-25" href="#">Rules</a>
-      <a class="header__link md-display-1 md-layout-item md-xsmall-size-100 md-small-size-50 md-medium-size-25" href="#">Forums</a>
-    </div>
+  <div class="header">
+    <md-toolbar>
+      <div class="md-toolbar-row">
+        <h3 class="md-title">Project Nano</h3>
+        <div class="md-toolbar-section-end">
+          <md-button class="button-icon-text">
+            <md-icon md-src="/static/sign-in-alt-solid.svg"></md-icon>
+            <div>Login</div>
+          </md-button>
+          <md-button class="button-icon-text">
+            <md-icon md-src="/static/file-alt-solid.svg"></md-icon>
+            <div>Register</div>
+          </md-button>
+        </div>
+      </div>
+      <div class="md-toolbar-row md-toolbar-offset">
+        <div class="header__links">
+          <md-button class="button-icon-text"><md-icon md-src="/static/dice-d6-solid.svg" /><div>About</div></md-button>
+          <md-button class="button-icon-text"><md-icon md-src="/static/download-solid.svg" /><div>Download</div></md-button>
+          <md-button class="button-icon-text"><md-icon md-src="/static/gavel-solid.svg" /><div>Rules</div></md-button>
+          <md-button class="button-icon-text"><md-icon md-src="/static/comments-solid.svg" /><div>Forums</div></md-button>
+        </div>
+      </div>
+    </md-toolbar>
   </div>
 </template>
 
@@ -19,4 +33,7 @@ export default {
 </script>
 
 <style scoped>
+.button-icon-text {
+  height: 45px;
+}
 </style>
