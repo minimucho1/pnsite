@@ -19,6 +19,9 @@
           <md-icon md-src="/static/dice-d6-solid.svg" /><div>About</div>
         </md-button>
         <md-button class="button-icon-text">
+          <div>News</div>
+        </md-button>
+        <md-button class="button-icon-text">
           <md-icon md-src="/static/download-solid.svg" /><div>Download</div>
         </md-button>
         <md-button class="button-icon-text">
