@@ -1,13 +1,18 @@
 <template>
-  <div class="sidebar">
-    <ServerStatusCard />
-    <ServerTimeCard />
+  <div class="sidebar md-layout">
+    <ServerStatusCard class="md-layout-item md-size-100 md-small-size-50" />
+    <ServerTimeCard class="md-layout-item md-size-100 md-small-size-50" />
     <SidebarCard
-      class="md-primary"
+      class="md-primary md-layout-item md-size-100 md-small-size-50"
       v-bind:title="serverRatesTitle"
       v-bind:value="serverRatesValue"
     />
-    <SidebarCard v-bind:title="serverVersionTitle" v-bind:value="serverVersionValue" />
+    <SidebarCard 
+      class="md-layout-item md-size-100 md-small-size-50"
+      v-bind:title="serverVersionTitle" 
+      v-bind:value="serverVersionValue" 
+    />
+    <!-- Discord Embed -->
   </div>
 </template>
 

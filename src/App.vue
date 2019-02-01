@@ -2,7 +2,7 @@
   <div id="app">
     <Header />
     <div class="md-layout">
-      <div class="md-layout-item md-size-35 md-large-size-30 md-xlarge-size-25 md-small-hide">
+      <div class="md-layout-item md-size-35 md-large-size-30 md-xlarge-size-25 md-small-size-100">
         <Sidebar />
       </div>
       <div class="md-layout-item md-size-65 md-large-size-70 md-xlarge-size-75 md-small-size-100">
