@@ -10,6 +10,7 @@
         <router-view/>
       </div>
     </div>
+    <Footer />
   </div>
 </template>
 
@@ -17,10 +18,11 @@
 import Header from '@/components/Header';
 import Sidebar from '@/components/Sidebar';
 import LoginDrawer from '@/components/drawer/LoginDrawer';
+import Footer from '@/components/Footer';
 
 export default {
   name: 'App',
-  components: { Header, Sidebar, LoginDrawer },
+  components: { Header, Sidebar, LoginDrawer, Footer },
   data() {
     return {
       isOpen: false
