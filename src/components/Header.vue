@@ -39,7 +39,7 @@
 export default {
   name: 'Header',
   methods: {
-    openSideDrawer: function(event) {
+    openSideDrawer() {
       this.$emit('update:isOpen', true);
     },
   }

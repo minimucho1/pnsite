@@ -31,20 +31,20 @@
 export default {
   name: 'LoginDrawer',
   props: {
-    isOpen: Boolean
+    isOpen: Boolean,
   },
   data() {
     return {
       username: '',
       password: '',
-    }
+    };
   },
   methods: {
     emitCloseDrawer() {
       this.$emit('update:isOpen', false);
-    }
+    },
   },
-}
+};
 </script>
 
 <style scoped>

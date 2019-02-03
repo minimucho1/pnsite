@@ -25,8 +25,8 @@ export default {
   components: { Header, Sidebar, LoginDrawer, Footer },
   data() {
     return {
-      isOpen: false
-    }
+      isOpen: false,
+    };
   },
 };
 </script>

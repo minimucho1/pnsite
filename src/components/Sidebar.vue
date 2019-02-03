@@ -7,10 +7,10 @@
       v-bind:title="serverRatesTitle"
       v-bind:value="serverRatesValue"
     />
-    <SidebarCard 
+    <SidebarCard
       class="md-layout-item md-size-100 md-small-size-50"
-      v-bind:title="serverVersionTitle" 
-      v-bind:value="serverVersionValue" 
+      v-bind:title="serverVersionTitle"
+      v-bind:value="serverVersionValue"
     />
     <!-- Discord Embed -->
   </div>
