@@ -16,10 +16,10 @@
       </div>
       <div class="md-toolbar-row header__links">
         <md-button class="button-icon-text">
-          <md-icon md-src="/static/dice-d6-solid.svg" /><div>About</div>
+          <md-icon md-src="/static/newspaper-solid.svg" /><div>News</div>
         </md-button>
         <md-button class="button-icon-text">
-          <div>News</div>
+          <md-icon md-src="/static/dice-d6-solid.svg" /><div>Rankings</div>
         </md-button>
         <md-button class="button-icon-text">
           <md-icon md-src="/static/download-solid.svg" /><div>Download</div>

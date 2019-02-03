@@ -2,6 +2,15 @@
 
 > The Project Nano website
 
+# To-Do
+
+- Logins
+- Register
+- News Page
+- Download Page
+- Rules Page
+- Rankings Page
+
 ## Build Setup
 
 ``` bash
