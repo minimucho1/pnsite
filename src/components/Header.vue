@@ -4,7 +4,7 @@
       <div class="md-toolbar-row md-toolbar-offset">
         <span class="md-display-1">Project Nano</span>
         <div class="md-toolbar-section-end">
-          <md-button class="button-icon-text">
+          <md-button class="button-icon-text" @click="openSideDrawer">
             <md-icon md-src="/static/sign-in-alt-solid.svg"></md-icon>
             <div>Login</div>
           </md-button>
@@ -38,6 +38,11 @@
 <script>
 export default {
   name: 'Header',
+  methods: {
+    openSideDrawer: function(event) {
+      this.$emit('update:isOpen', true);
+    },
+  }
 };
 </script>
 

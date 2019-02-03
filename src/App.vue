@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <Header />
+    <Header v-on:update:isOpen="isOpen = $event" />
+    <LoginDrawer v-bind:isOpen.sync="isOpen" v-on:update:isOpen="isOpen = $event" />
     <div class="md-layout">
       <div class="md-layout-item md-size-35 md-large-size-30 md-xlarge-size-25 md-small-size-100">
         <Sidebar />
@@ -15,10 +16,16 @@
 <script>
 import Header from '@/components/Header';
 import Sidebar from '@/components/Sidebar';
+import LoginDrawer from '@/components/drawer/LoginDrawer';
 
 export default {
   name: 'App',
-  components: { Header, Sidebar },
+  components: { Header, Sidebar, LoginDrawer },
+  data() {
+    return {
+      isOpen: false
+    }
+  },
 };
 </script>
 
